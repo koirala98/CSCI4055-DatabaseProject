@@ -54,4 +54,4 @@ You can change the connection settings in `DatabaseManager.java`:
 4. Right click the project → Refresh.
 5. Right click `Main.java` → Run As → Java Application.
 
-You can also turn this into a GitHub project by pushing this folder as your main repository contents.
+
