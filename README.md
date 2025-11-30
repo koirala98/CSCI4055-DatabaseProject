@@ -93,6 +93,8 @@ Tables required:
 - WORKS_ON (ESSN, PNO, HOURS, …)  
 
 IMPORTANT: Connection Credentials Connection settings are hardcoded in **DatabaseManager.java**
+private static final String USERNAME = "root";
+private static final String PASSWORD = "";
 
 Connection settings can be changed in **DatabaseManager.java**:
 - username  
