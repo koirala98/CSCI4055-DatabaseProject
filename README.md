@@ -19,7 +19,7 @@ The goal was to build a Java Swing application that connects to a MySQL database
 ---
 
 ##  What the Program Does
-The Java Swing program opens a window where the user can:
+The Java Swing program opens a window (built using Eclipse Window Builder) where the user can:
 
 - Enter a database name  
 - Load (Fill) all Departments and Projects  
@@ -91,6 +91,8 @@ Tables required:
 - EMPLOYEE (SSN, FNAME, MINIT, LNAME, DNO, …)  
 - PROJECT (PNUMBER, PNAME, DNUM, …)  
 - WORKS_ON (ESSN, PNO, HOURS, …)  
+
+IMPORTANT: Connection Credentials Connection settings are hardcoded in **DatabaseManager.java**
 
 Connection settings can be changed in **DatabaseManager.java**:
 - username  
