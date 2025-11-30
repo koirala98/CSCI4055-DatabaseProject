@@ -1,37 +1,31 @@
-SQL Notes for Database Project
+# SQL Files for CSCI 4055 Database Project
 
-This project expects a database that follows a COMPANY style schema.
+This folder contains the SQL files used to create and populate the COMPANY style database required for our Java Swing application.
 
-Suggested minimal tables:
+# Files
 
-CREATE TABLE DEPARTMENT (
-    DNUMBER INT PRIMARY KEY,
-    DNAME   VARCHAR(50) NOT NULL
-);
+# 1. company_schema.sql
+Defines all the database tables following the COMPANY schema, including:
+- DEPARTMENT
+- PROJECT
+- EMPLOYEE
+- WORKS_ON  
+This file must be run first.
 
-CREATE TABLE EMPLOYEE (
-    SSN   CHAR(9) PRIMARY KEY,
-    FNAME VARCHAR(30) NOT NULL,
-    MINIT CHAR(1),
-    LNAME VARCHAR(30) NOT NULL,
-    DNO   INT,
-    FOREIGN KEY (DNO) REFERENCES DEPARTMENT(DNUMBER)
-);
+# 2. sample_data.sql
+Inserts sample records into all tables.  
+Used to test the GUI application with realistic data.
 
-CREATE TABLE PROJECT (
-    PNUMBER INT PRIMARY KEY,
-    PNAME   VARCHAR(50) NOT NULL,
-    DNUM    INT,
-    FOREIGN KEY (DNUM) REFERENCES DEPARTMENT(DNUMBER)
-);
+# 3. queries.sql
+Contains the SQL queries used by the application, including:
+- Loading department names  
+- Loading project names  
+- Searching employees based on selected filters  
 
-CREATE TABLE WORKS_ON (
-    ESSN CHAR(9),
-    PNO  INT,
-    HOURS DECIMAL(5,2),
-    FOREIGN KEY (ESSN) REFERENCES EMPLOYEE(SSN),
-    FOREIGN KEY (PNO) REFERENCES PROJECT(PNUMBER)
-);
+# How to Use
+1. Create a new MySQL database.
+2. Run `company_schema.sql` to create tables.
+3. Run `sample_data.sql` to insert data.
+4. Use the queries from `queries.sql` in the Java application (DatabaseManager.java).
 
-You can change these definitions to match the schema used in your course.
-Update the queries in DatabaseManager if your column or table names differ.
+These SQL files are required for the Java GUI to load and search employee information.
