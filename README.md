@@ -2,7 +2,8 @@
 
 **Group Members:**  
 - Ishant Shrestha  
-- Sushant Koirala  
+- Sushant Koirala
+- Lauren Worley
 
 This project is our final group assignment for CSCI 4055.  
 The goal was to build a Java Swing application that connects to a MySQL database using the COMPANY schema and allows users to search for employees based on departments and projects.
