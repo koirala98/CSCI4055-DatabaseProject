@@ -21,8 +21,6 @@ import java.awt.event.ActionEvent;
 /**
  * EmployeeSearchFrame
  *
- * This is a ready to use frame that follows the requirements of the
- * CSCI 4055 database project. It provides:
  * - Database name entry
  * - Department, Project, and Employee lists (scrollable)
  * - Multiple selection for Department and Project
