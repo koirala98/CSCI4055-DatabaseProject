@@ -14,7 +14,6 @@ import javax.swing.JOptionPane;
  * DatabaseManager
  *
  * Handles connecting to the database and running queries.
- * Adjust USERNAME, PASSWORD, and URL pattern for your environment.
  */
 public class DatabaseManager {
 
@@ -75,8 +74,6 @@ public class DatabaseManager {
      * - DEPARTMENT(DNUMBER, DNAME)
      * - PROJECT(PNUMBER, PNAME, DNUM)
      * - WORKS_ON(ESSN, PNO)
-     *
-     * You may need to adjust the SQL if your column names differ.
      */
     public List<String> searchEmployees(
             List<String> deptNames,
